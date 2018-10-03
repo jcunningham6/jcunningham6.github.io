@@ -1,0 +1,88 @@
+/* Jim Cunningham - GEOG 575 */
+/* The CSS page for leaflet_lab - Lab 1*/
+
+html, body {
+	/* display: block; */
+	background-color: #959595;
+	height: 90%;
+	width: 100%;
+	margin: 0px;
+}
+
+#topBox {
+	background-image: url(../img/graybar.jpg);
+	background-repeat: repeat;
+	position: relative;
+	margin: 10px 10px 5px 10px;
+	/* width: 1203px; */
+	height: 100px;
+	/* padding: 5px; */
+	text-align: center;
+	background-color: #D7D5D0;
+	background-origin: content-box;
+	border: 3px solid;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#topBox h1 {
+	color: #D7D5D0;
+	padding-top: 10px;
+}
+
+#map_canvas {
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	display: inline-block;
+	height: 680px;
+	width: 75%;
+	/* width: 900px; */
+	/* padding: 5px; */
+	background-color: #D7D5D0;
+	border: 3px solid;
+	/* border-right: 3px solid; */
+	/* border-left: 3px solid;
+	border-bottom: 3px solid; */
+	overflow: hidden;
+}
+
+#side_panel {
+	position: absolute;
+	width: 22%;
+	/* width: 300px; */
+	height: 680px;
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 0px;
+	background-color: #D7D5D0;
+	border: 3px solid;
+	/* border-right: 3px solid;
+	border-left: 3px solid;
+	border-bottom: 3px solid; */
+	text-align: center;
+	overflow: hidden;
+}
+
+#side_panel p.temp {
+	text-align: center;
+}
+
+.leaflet-popup-content p {
+	margin: 0.2em 0;
+	}
+
+.range-slider {
+	width: 170px;
+	text-align: center;
+}
+
+#forward {
+	float: right;
+	margin-right: 10px;
+}
+
+#reverse {
+	float: left;
+	margin-left: 10px;
+}

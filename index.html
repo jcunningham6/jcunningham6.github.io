@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- header -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Leaflet Lab</title>
+
+		<!--external stylesheets-->
+		<link rel="stylesheet" href="lib/leaflet/leaflet.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!--[if IE<9]>
+			<link rel="stylesheet" href="css/style.ie.css">
+		<![endif]-->
+	</head>
+
+	<body>
+		<!-- Title section for page -->
+		<div id="topBox">
+			<h1>CHESTER COUNTY PARISH DEMOGRAPHICS</h1>
+		</div>
+		
+		<!-- Map section -->
+		<div id="map_canvas">
+		</div>
+		
+		<!-- Side panel for slider, legend, credits -->
+		<div id="side_panel">
+			<p class="temp">SLIDER</p>
+			<input class="range-slider" type="range">
+			<button class="skip" id="reverse">Reverse</button>
+			<button class="skip" id="forward">Skip</button>
+		</div>
+
+		<!--external scripts-->
+		<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="lib/leaflet/leaflet-src.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
