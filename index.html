@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>Leaflet Lab</title>
+		<title>Leaflet Lab - Parish Demographics</title>
 
 		<!--external stylesheets-->
 		<link rel="stylesheet" href="lib/leaflet/leaflet.css">
@@ -16,26 +16,91 @@
 	</head>
 
 	<body>
-		<!-- Title section for page -->
-		<div id="topBox">
-			<h1>CHESTER COUNTY PARISH DEMOGRAPHICS</h1>
-		</div>
-		
-		<!-- Map section -->
-		<div id="map_canvas">
-		</div>
-		
-		<!-- Side panel for slider, legend, credits -->
-		<div id="side_panel">
-			<p class="temp">SLIDER</p>
-			<input class="range-slider" type="range">
-			<button class="skip" id="reverse">Reverse</button>
-			<button class="skip" id="forward">Skip</button>
-		</div>
+		<div id="main">
+			<!-- Title section for page -->
+			<div id="header">
+				<div id="logo">
+					<h1>ARCHDIOCESE of PHILADELPHIA</h1>
+					<h2>Parish Demography</h2>
+				</div>
+			</div>
+			
+			<div id="main_content">
+				<!-- Side panel for slider, legend, credits -->
+				<div id="side_panel">
+					<h1 class="title">MAP OPTIONS and LEGEND</h1>
+					
+					<hr>
+					
+					<div id="side_panel_options">
+						<label class="title">DEANERY BOUNDARIES</label><br>
+						<input type="radio" id="deaneriesOn" name="deaneries" value="on" onclick="getDeaneries(map)"><label class="radio">On</label>
+						<input type="radio" id="deaneriesOff" name="deaneries" value="off" onclick="removeDeaneries()" checked="checked"><label class="radio">Off</label>
+					
+						<hr>
+					
+						<label class="title">FILTER BY DEANERIES</label><br>
+						<select id="deanerynum">
+							<option>ALL PARISH LOCATIONS</option>
+							<option>1 - Eastern Delaware County</option>
+							<option>2 - Western Delaware County</option>
+							<option>3 - Western Chester County and Oxford Region</option>
+							<option>4 - Northern Chester County</option>
+							<option>5 - Western Montgomery County</option>
+							<option>6 - Main Line Bridgeport and Roxborough</option>
+							<option>7 - Eastern Montgomery County and North West Philadelphia</option>
+							<option>8 - South Philadelphia and Northern Liberties</option>
+							<option>9 - West Philadelphia and Center City</option>
+							<option>10 - Central and Upper Bucks County</option>
+							<option>11 - Upper North East Philadelphia and Lower Bucks County</option>
+							<option>12 - Lower North East Philadelphia</option>
+						</select>
+						
+						<hr>
+						
+						<label class="title">EXPLORE DIFFERENT YEARS</label><br>
+						<div id="slider_div">
+							<button class="skip" id="reverse">Reverse</button>
+							<!-- <button class="skip" id="forward">Skip</button> -->
+							<input class="range-slider" type="range">
+							<!-- <button class="skip" id="reverse">Reverse</button> -->
+							<button class="skip" id="forward">Skip</button>
+							<br>
+							<label class="simple">SELECTED YEAR: </label><input id="yrq" type="text" disabled="disabled" autocomplete="off">
+						</div>
+						
+						<hr>
+						
+						<div id="panel_legend">
+							<p>DYNAMIC SYMBOL LEGEND</p>
+						</div>
+						
+						<hr>
+						
+						<div id="summary">
+							<label>RESOURCE INFORMATION:</label>
+							<p>All parishioner and deanery data was provided by the Archdiocese of Philadelphia Office for Parish Service and Support. Parishioner demographic data for the January-December calendar year is collected in the Spring of the following year, scrubbed, and then verified before posting.</p>
+							<br>							
+							<label>Web map developed by: <a href="http://www.psugeogjim.com/" target="_blank">Jim Cunningham</a></label>
+						</div>
+					</div>
+					
+					<hr>
+					
+				</div>
+				
+				<div id="map_pane">
+					<img class="map" src="img/archphila.png"></img><h1>Parish Demography Map</h1>
+					<!-- Map section -->
+					<div id="map_canvas" class="clear">
+					</div>
+				</div>
+			</div>
 
-		<!--external scripts-->
-		<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
-		<script type="text/javascript" src="lib/leaflet/leaflet-src.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+			<!--external scripts-->
+			<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+			<script type="text/javascript" src="lib/leaflet/leaflet-src.js"></script>
+			<script type="text/javascript" src="js/main.js"></script>
+		</div>
 	</body>
 </html>
