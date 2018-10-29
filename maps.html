@@ -51,14 +51,14 @@
 						<span class="menu">Menu</span>
 					</button>
 					<!-- website brand name -->
-					<a class="navbar-brand" href="#">Iacobus (Latin for "James")</a>
+					<a class="navbar-brand" href="index.html">Iacobus (Latin for "James")</a>
 				</div>
 				
 				<!-- navbar links -->
 				<div id="navbar" class="collapse navbar-collapse">
 				  <ul class="nav navbar-nav">
 					<li><a href="about.html">About</a></li>
-					<li><a href="maps.html">Maps</a></li>
+					<li><a href="#" class="active">Maps</a></li>
 					<li><a href="resume.html">Resume</a></li>
 					<li><a href="articles.html">Articles</a></li>
 				  </ul>
@@ -66,27 +66,32 @@
 			</div>
 		</nav>
 		
-		<!-- landing page main content -->
+		<!-- maps page main content -->
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<img class="img-responsive" width="260px" src="assets/cunningham_jj_biz.jpg" alt="profile pic" />
+					<p class="title">Story Map</p>
+					<div class="thumbnail center-block map-thumbnail">
+						<a href="portfolio/storymap.html">
+							<img src="assets/storymap_thumbnail.png" alt="story map" />
+						</a>
+					</div>
 				</div>
-				<div class="col-md-8">
-					<p>At one time, I have been:</p>
-					<ul>
-						<li>An actuarial science major at age 18</li>
-						<li>A seminarian studying for the Catholic priesthood</li>
-						<li>A weighmaster and CAT 773B haul truck operator in a limestone quarry</li>
-						<li>A United States Navy sailor</li>
-					</ul>
-					<p>I currently profess to be:</p>
-					<ul>
-						<li>A graduate of both Saint Charles Borromeo Seminary and the Pennsylvania State University</li>
-						<li>A graduate student with the University of Wisconsin</li>
-						<li>A GIS specialist with an engineering design firm</li>
-						<li><i>*and doing my best to live according to the precepts of fides et ratio</i></li>
-					</ul>
+				<div class="col-md-4">
+					<p class="title">Terrain Map</p>
+					<div class="thumbnail center-block map-thumbnail">
+						<a href="portfolio/terrainmap.html">
+							<img src="assets/terrainmap_thumbnail.png" alt="terrain map" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<p class="title">Web Mapping Application</p>
+					<div class="thumbnail center-block map-thumbnail">
+						<a href="http://www.psugeogjim.com/JMap/JMap.html" target="_blank" onclick="jmapFunction()">
+							<img src="assets/jmap_thumbnail.png" alt="jmap" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

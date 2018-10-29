@@ -1,219 +1,211 @@
-html {
-	height: 100%;
-}
-
 body {
-	font-family: "lucida sans", arial, sans-serif;
-	padding: 0px;
-	margin: 0px;
-	font-size: .78em;
-	background: #F6F4F0;
-	color: #635B53;
-}
-
-p {
-	margin: 0px;
-	/* padding: 0px 0px 16px 0px; */
-	line-height: 1.7em;
-}
-
-h1 {
-	font-size: 150%;
-	/* padding: 7px 0px 5px 0px; */
-	padding: 5px 20px 5px 0px;
-	margin: 0px 0px 12px 0px;
-	font-weight: normal;
-	/* color: #342F28; */
-	color: #635B53;
-	font-family: serif;
-	text-transform: uppercase;
-	border-bottom: 1px solid #CCC6B4;
-}
-
-label {
-	font-weight: bold;
-}
-
-label.simple {
-	font-weight: normal;
-}
-
-button {
-	padding: 0px;
-}
-
-#map_pane img {
-	float: right;
-	width: 4%;
-}
-
-#main {
-	margin-left: auto; 
-	margin-right: auto;
-}
-
-#header {
-	background: url(../img/back.png) repeat-x;
-	height: 131px;
-	overflow: hidden;
-	/* height: 127px; */
-/* 	width: 870px;
-	height: 127px;
-	position: absolute; 
-	top: 0;
-	left: 0;} */
-}
-
-#logo {
-	text-align: center;
-	/* width: 870px;
-	height: 17px;
-	position: relative;
-	background: transparent url(logo.png) no-repeat right; */
-}
-
-#logo h1, h2 {
-	font: normal 200% 'century gothic', arial, sans-serif;
-	border-bottom: 0;
-	text-transform: none;
-	margin: 0px 0px 0px 9px;
-	/* font-family: "century gothic", arial, sans-serif; */
-	font-size: 260%;
-	padding: 22px 0px 0px 0px;
-	color: #777;
-}
-
-#logo h2 {
-	font-size: 150%;
-	padding-top: 0px;
-}
-
-#logo img {
-	float: left;
-	padding-top: 15px;
-}
-
-#logo, #main_content {
-	margin-left: auto; 
-	margin-right: auto;
-/* 	margin-left: 50px;
-	margin-right: 50px; */
-}
-
-#main_content {
-	/* width: 1275px; */
-	width: 995px;
-	margin-top: 10px;
-	overflow: hidden;
-} 
-
-#side_panel {
-	/* float: right; */
-	float: left;
-	width: 300px;
-	height: 495px;
-	padding: 10px 25px 15px 15px;
-	border: 2px solid;
-	/* text-align: center; */
-}
-
-#side_panel_options {
-	text-align: center;
-}
-
-
-#side_panel select {
-	font-size: 10px;
-	width: 300px;
-}
-
-#side_panel label.radio {
-	font-size: 12px;
-	font-weight: normal;
-}
-
-#slider_div {
-	display: inline-block;
-	width: 250px;
-	/* border: 1px solid; */
-	padding: 5px 0px;
-}
-
-#yrq {
-	width: 50px;
-	text-align: center;
-}
-
-#panel_legend {
-	border: 1px solid;
-	/* font-weight: bold; */
-	color: #635B53;
-}
-
-#panel_legend p {
-	font-weight: bold;
-}
-
-#panel_legend text {
-	font-size: 10px;
-}
-
-#summary {
-	text-align: left;
-}
-
-#summary p {
-	line-height: 1em;
 	font-family: Arial, Helvetica, sans-serif;
-	font-style: italic;
+	background-color: #d9d9d9;
 }
 
-#summary a {
-	color: #18B3CF;
+header {
+	margin: 0px;
 }
 
-#summary a:hover {
+.usgs {
+	background-color: #dbebc7;
+}
+
+.jumbotron {
+	background-color: #5a8624;
+	padding: 0%;
+	margin: 0px;
+	font-family: 'Mina', sans-serif;
+	color: #a5c35c;
+}
+
+.jumbotron h2 {
+	color: #3a3a3a;
+	font-family: 'IM Fell DW Pica SC', serif;
+	/* font-family: 'Vollkorn SC', serif; */
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navbar-default {
+	border-radius: 0px;
+	border-color: #3a3a3a;
+	background-color: #3a3a3a;
+	background-image: none;
+	font-color: #a5c35c;
+}
+
+.navbar-default .navbar-brand {
+	color: grey;
+	font-size: 20px;
+	font-family: 'IM Fell DW Pica SC', serif;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: #a5c35c;
+}
+
+.navbar-default .navbar-brand:focus {
+	color: #5a8624;
+}
+
+.navbar-default .navbar-nav li a {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #d9d9d9;
+}
+
+.navbar-default .navbar-nav li a:hover {
+	background-color: #a5c35c;
+	color: #3a3a3a;
+}
+
+.navbar-default .navbar-nav li a:focus {
+	background-color: #5a8624;
+	color: #ffffff
+}
+
+.navbar-header {
+	color: #3a3a3a;
+}
+
+.navbar-header .navbar-toggle {
+	background-color: #d9d9d9;
+}
+
+.navbar-header .navbar-toggle:hover,
+.navbar-header .navbar-toggle:focus {
+	background-color: #5a8624;
+	color: black;
+}
+
+.navbar-fixed-bottom {
+	background-color: #5a8624;
+}
+
+.row {
+	padding-bottom: 20px;
+}
+
+.row p {
+	font-family: 'IM Fell DW Pica SC', serif;
+	font-size: 22px;
+	color: #3a3a3a;
+}
+
+.row li {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px;
+	color: #3a3a3a;
+}
+
+.mylinks {
+	color: #5a8624;
+}
+
+.mylinksx {
+	font-weight: bold;
+	color: #3a3a3a;
+}
+
+/* NOTE: focus is BEFORE hover for these links*/
+/* ensures that hover takes precedence, changes color of anchor even if it has been clicked */
+.mylinks:focus, .mylinksx:focus {
+	color: #3a3a3a;
+}
+
+.mylinks:hover, .mylinksx:hover {
+	color: #a5c35c;
+}
+/* ------------------------------------------ */
+
+img.aboutpage {
+	border-color: #3a3a3a;
+	border-width: 2px;
+	background-color: #a5c35c;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+h2.map-title {
+	font-family: 'IM Fell DW Pica SC', serif;
+}
+
+p.smallguy {
+		font-size: 15px;
+}
+
+p.map-description {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px;
+}
+
+p.title {
+	text-align: center;
+}
+
+.map-thumbnail, .article-thumbnail {
+	background-color: #dbebc7;
+	border-color: #3a3a3a;
+	border-width: 2px;
+	width: 290px;
+}
+
+.map-thumbnail:hover, .article-thumbnail:hover {
+	background-color: #5a8624;
+}
+
+.myresume {
+	color: #3a3a3a;
+}
+
+.myresume h2 {
+	color: #5a8624;
+}
+
+.myresume li {
+	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 14px;
 }
 
-#map_pane {
-	text-align: left;
-	/* width: 724px; */
-	/* float: left; */
-	/* width: 910px; */
-	width: 630px;
-	height: 510px;
-	float: right;
-	padding: 10px 0px 0px 10px;
-	/* padding: 10px 10px 15px 10px; */
-	border: 2px solid;
+.active {
+	background-color: #5a8624;
 }
 
-#map_canvas {
-	/* width: 895px; */
-	width: 615px;
-	height: 438px;
-	float: right;
-	padding: 10px 15px 15px 10px;
-	border-top: 2px solid;
+/* resizes all the indicated elements for smaller screens */
+@media only screen and (max-width: 600px) {
+	.jumbotron h2 {
+		font-size: 24px;}
+	.jumbotron p {
+		font-size: 15px;}
+	.navbar-default .navbar-brand {
+		font-size: 15px;}
+	.row p {
+		font-size: 22px;}
+	.row li {
+		font-size: 13px;}
+	h2.map-title {
+		font-size: 22px;}
+	p.smallguy {
+		font-size: 13px;}
+	p.map-description {
+		font-size: 13px;}
 }
 
-.leaflet-popup-content p {
-	margin: 0.2em 0;
-	}
-	
-/* .range-slider {
-	display: inline-block;
-	position: relative;
-	text-align: center;
-} */
+.footer h4 {
+	color: #3a3a3a;
+}
 
-.legend-control-container {
-	width: 200px;
-	height: 30px;
-	padding-top: 10px;
-	background-color: #FFFFFF;
-	border: solid 2px;
-	text-align: center;
-	font-weight: bold;
+.footer ul {
+	padding-left: 0px;
+}
+
+.footer a {
+	color: #a5c35c;
+}
+
+.footer i {
+	padding-right: 5px;
+	color: #a5c35c;
+	font-size: 20px;
 }
