@@ -6,15 +6,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Jim Cunningham</title>
+		<title>St. Paul's Journeys</title>
 		<meta name="description" content="Jim believes that faith builds on reason, and he lives by both. Unofficially a logician, theologian, and map-maker. He'll also throw you, choke you, arm bar you, or pin you.">
 		
-		<link rel="shortcut icon" href="assets/myglobal.ico">
+		<link rel="shortcut icon" href="../assets/myglobal.ico">
 		
 		<!-- CSS stylesheets -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../css/style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC|Mina|Vollkorn+SC">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -35,7 +35,7 @@
 		<!-- usgs topo -->
 		<div class="usgs">
 			<div class="container">
-				<img class="img-responsive" src="assets/usgs.png" alt="fort seybert usgs" />
+				<img class="img-responsive" src="../assets/usgs.png" alt="fort seybert usgs" />
 			</div>
 		</div>
 		
@@ -51,47 +51,39 @@
 						<span class="menu">Menu</span>
 					</button>
 					<!-- website brand name -->
-					<a class="navbar-brand" href="index.html">Iacobus (Latin for "James")</a>
+					<a class="navbar-brand" href="../index.html">Iacobus (Latin for "James")</a>
 				</div>
 				
 				<!-- navbar links -->
 				<div id="navbar" class="collapse navbar-collapse">
 				  <ul class="nav navbar-nav">
-					<li><a href="about.html">About</a></li>
-					<li><a href="#" class="active">Maps</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="articles.html">Articles</a></li>
+					<li><a href="../about.html">About</a></li>
+					<li><a href="../maps.html" class="active">Maps</a></li>
+					<li><a href="../resume.html">Resume</a></li>
+					<li><a href="../articles.html">Articles</a></li>
 				  </ul>
 				</div>
 			</div>
 		</nav>
 		
-		<!-- maps page main content -->
+		<!-- mapbox map page main content -->
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<p class="title">Story Map</p>
-					<div class="thumbnail center-block map-thumbnail">
-						<a href="portfolio/storymap.html">
-							<img src="assets/storymap_thumbnail.png" alt="story map" />
-						</a>
-					</div>
+				<div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+					<h2 class="map-title">St. Paul's Rome and his Journeys</h2>
+					<p class="map-description">
+						I love my faith and I love making maps. So I often look for opportunities to meld those loves together. This particular map is a thematic one called 'St. Paul's Rome and his Journeys', based on Paul of Tarsus, a Christian apostle whose ministry was situated in the middle of the first century A.D. His mission began in Judea and was carried out in various parts of the Roman Empire. I was inspired to use this particular theme by a viewing of the 2018 film, 'Paul, Apostle of Christ'.
+					</p>
+					<p class="map-description">
+						The map itself was created using Mapbox Studio. Click on the image below to view the full map.
+					</p>
 				</div>
-				<div class="col-md-4">
-					<p class="title">Terrain Map</p>
-					<div class="thumbnail center-block map-thumbnail">
-						<a href="portfolio/terrainmap.html">
-							<img src="assets/terrainmap_thumbnail.png" alt="terrain map" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<p class="title">Mapbox Tileset Map</p>
-					<div class="thumbnail center-block map-thumbnail">
-						<a href="portfolio/mapbox.html">
-							<img src="assets/mapboxstpaul_thumbnail.png" alt="mapbox map" />
-						</a>
-					</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<a href="https://api.mapbox.com/styles/v1/judokajim/cjgqs24jy00022rnsatsmyvz8.html?fresh=true&title=true&access_token=pk.eyJ1IjoianVkb2thamltIiwiYSI6ImNpc2ZpYzc0cDAxbzQyb3J0OG56Yzl4aWIifQ.chAPxBGKdLCZkY4k1xFK2A#3.4/38.824105/16.915779/0" target="_blank">
+						<img class="center-block img-responsive" src="../assets/mapbox_stpaul.png" alt="St. Paul's Journeys" />
+					</a>
 				</div>
 			</div>
 		</div>
@@ -115,9 +107,8 @@
 		</div>
 		
 		<!-- load scripts -->
-		<script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
-		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
-		<script type="text/javascript" src="lib/jmapthumb.js"></script>
+		<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
 	</body>
 
 </html>
